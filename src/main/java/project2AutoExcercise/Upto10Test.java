@@ -3,6 +3,7 @@ package project2AutoExcercise;
 import java.awt.Point;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
 public class Upto10Test extends BaseClasss {
@@ -17,7 +18,7 @@ public class Upto10Test extends BaseClasss {
 		use2.clickContactUs();
 		use2.verifyInTouch();
 		use2.fillContactUs("ExcelR", "excelr@gmail.com", "My last order", "Order not deliverd yet");
-		use2.uploadFile("C:\\Users\\prati\\git\\OrangeHRM\\src\\main\\java\\project2AutoExcercise\\ContactUs");
+		use2.uploadFile("C:\\Users\\prati\\eclipse-workspace\\AutomationExcercise\\src\\main\\java\\project2AutoExcercise\\ContactUs");
 		use2.clickSubmitContactUs();
 		use2.clickAlertOK();
 		use2.verifySuccessContactus();
@@ -40,6 +41,8 @@ public class Upto10Test extends BaseClasss {
 		use.verifyHomepage();
 		use2.clickProductsTab();
 		use2.verifyAllProductPage();
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(308,6000)");
 		use2.clickView1st();
 		use2.verifyProductDetails();
 	}
