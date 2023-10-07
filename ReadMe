@@ -15,8 +15,8 @@ Folder structure:-
   - main
     - java
       - project2AutoExcercise
-            - BaseClass.java (Verifies the TCs of creating credentials)
-            - Upto10.java (Verifies the TCs of Homepage for Login)
+            - BaseClass.java 
+            - Upto10.java 
             - Upto10Test.java
             - Upto15.java
             - Upto15Test.java
